@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>任务一</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 19px;
+        }
+
+        @font-face {
+            font-family: 'iconfont';
+            /* project id 175467 */
+            src: url('http://at.alicdn.com/t/font_ggugjw834j5ah5mi.eot');
+            src: url('http://at.alicdn.com/t/font_ggugjw834j5ah5mi.eot?#iefix') format('embedded-opentype'), url('http://at.alicdn.com/t/font_ggugjw834j5ah5mi.woff') format('woff'), url('http://at.alicdn.com/t/font_ggugjw834j5ah5mi.ttf') format('truetype'), url('http://at.alicdn.com/t/font_ggugjw834j5ah5mi.svg#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .clearfix::after {
+            content: "";
+            height: 0;
+            clear: both;
+            display: block;
+            visibility: hidden;
+        }
+
+        header {
+            padding: 10px 0 10px 20px;
+            border-bottom: 1px solid #ccc3c3;
+        }
+
+        header .logo {
+            width: 50%;
+            height: 60px;
+        }
+
+        .nav {
+            padding-right: 0;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            border-bottom: 1px solid #d4c1c1;
+        }
+
+        .nav h1 {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .nav .fenlei {
+            position: absolute;
+            top: 12px;
+            left: 10px;
+        }
+
+        .nav .iconfont {
+            font-size: 25px;
+            color: #2d1515;
+        }
+
+        .nav .fresh {
+            position: absolute;
+            top: 11px;
+            left: 60px;
+        }
+
+        .nav .write {
+            position: absolute;
+            top: 12px;
+            right: 10px;
+        }
+
+        .search {
+          position: relative;
+          border-bottom: 1px solid #aaa;
+        }
+        .search h2 {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 50px;
+            color: #aaa;
+        }
+        .search .search-font {
+          position: absolute;
+          left: 10px;
+          top: 12px;
+        }
+        .search .search-font .iconfont {
+          font-size: 25px;
+          color: #030c15;
+        }
+        .content {
+          position: relative;
+          padding-left: 40px;
+          padding-top: 10px;
+          color: #ad8686;
+        }
+        .content .left {
+          position: absolute;
+          left: 10px;
+          top: 27px;
+        }
+        .content .left .iconfont {
+          font-size: 25px;
+          color: #aaa;
+        }
+        .content .right span {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+        .content .right h2 {
+          color: #000;
+        }
+        .content .right p {
+          line-height: 30px;
+        }
+        .right .collect {
+          position: absolute;
+          right: 10px;
+          bottom:10px;
+          color: #aaa;
+        }
+        .right .collect .iconfont {
+          font-size: 25px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./google.png" alt="google">
+    </header>
+    <section class="nav">
+        <h1>收件箱</h1>
+        <a href="javascript:;" class="fenlei">
+            <!-- 分类 -->
+            <i class="iconfont">&#xe60b;</i>
+        </a>
+        <a href="javascript:;" class="fresh">
+            <i class="iconfont">&#xe600;</i>
+        </a>
+        <a href="javascript:;" class="write">
+            <i class="iconfont">&#xe69e;</i>
+        </a>
+    </section>
+    <section class='search'>
+        <h2>搜索</h2>
+        <a href="javascript:;" class="search-font">
+            <i class="iconfont">&#xe6ad;</i>
+        </a>
+    </section>
+    <section class="content">
+        <a href="javascript:;" class="left">
+            <i class="iconfont">&#xe60f;</i>
+        </a>
+        <section class="right">
+            <p>
+                <h2>Steam Store</h2>
+                <span>下午 2:58</span>
+            </p>
+            <p>您愿望单中的一件物品正在促销!</p>
+            <p>to be or not to be, that is a questi...</p>
+            <a href="javascript:;" class="collect">
+              <i class="iconfont">&#xe614;</i>
+            </a>
+        </section>
+    </section>
+</body>
+
+</html>
