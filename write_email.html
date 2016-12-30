@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分类</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 19px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        @font-face {
+            font-family: 'iconfont';
+            /* project id 175467 */
+            src: url('http://at.alicdn.com/t/font_up7grx2rjrwwmi.eot');
+            src: url('http://at.alicdn.com/t/font_up7grx2rjrwwmi.eot?#iefix') format('embedded-opentype'), url('http://at.alicdn.com/t/font_up7grx2rjrwwmi.woff') format('woff'), url('http://at.alicdn.com/t/font_up7grx2rjrwwmi.ttf') format('truetype'), url('http://at.alicdn.com/t/font_up7grx2rjrwwmi.svg#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .clearfix::after {
+            content: "";
+            height: 0;
+            clear: both;
+            display: block;
+            visibility: hidden;
+        }
+
+        header {
+            padding: 10px 0 10px 20px;
+            border-bottom: 1px solid #ccc3c3;
+            background-color: #e2dbdb;
+        }
+
+        header .logo {
+            width: 50%;
+            height: 60px;
+        }
+
+        .content ul li {
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #f9cccc;
+            line-height: 40px;
+            padding-left: 13px;
+            color: #d6baba;
+        }
+        .content ul li span{
+          display: inline-block;
+          width: 20%;
+        }
+        .content ul li .receiver {
+          width: 67%;
+        }
+        .content .wrap-button {
+          position: relative;
+          width: 100%;
+          height: 50px;
+        }
+        .content .wrap-button button {
+          border-radius: 5px;
+        }
+        .content .wrap-button .close {
+          width: 50px;
+          height: 30px;
+          border: 1px solid #aaa;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+        }
+        .content  .wrap-button .send {
+          width: 50px;
+          height: 30px;
+          border: 1px solid #b2b2bd;
+          background-color: blue;
+          color: #fff;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./google.png" alt="google">
+    </header>
+    <section class='content'>
+      <section class="wrap-button">
+        <button class="close">关闭</button>
+        <button class="send">发送</button>
+      </section>
+
+        <ul>
+            <li>
+                <span>收件人: </span>
+                <input type="text" class="receiver" name="receiver" >
+                <i class="iconfont">&#xe60c;</i>
+            </li>
+
+            <li>
+                <span>抄送: </span>
+                <input type="text" class="receiver" name="receiver" >
+                <i class="iconfont">&#xe60c;</i>
+            </li>
+
+            <li>
+                <span>密送: </span>
+                <input type="text" class="receiver" name="receiver" >
+                <i class="iconfont">&#xe60c;</i>
+            </li>
+
+            <li>
+                <span>主题: </span>
+                <input type="text" class="receiver" name="receiver" >
+            </li>
+        </ul>
+    </section>
+
+    <script src="./jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var collect_flag = 1;
+            $(".collect .iconfont").click(function() {
+                if (collect_flag == 1) {
+                    $(this).html("&#xe610;");
+                    console.log();
+                    collect_flag = 0;
+                } else {
+                    $(this).html("&#xe614;");
+                    collect_flag = 1;
+                }
+            });
+
+            $(".close").on("click", function() {
+              location.href = "./task1.html";
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>
